@@ -1,0 +1,40 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Home</title>
+    </head>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'vendor/bootstrap.css' %}">
+<body>
+    <img id="banner" src="{% static 'img/home.jpg' %}" alt="">
+
+    <div id="menu">
+<ul>
+    <li><a href="/">Home</a></li>
+    <li><a href="/nasdaq/">Perusahaan NASDAQ</a></li>
+</ul>
+    </div>
+
+
+            <div class="container">
+                <br>
+                  {% for tampungNas in TampungNasdaq %}
+                    <div class="alert alert-success" role="alert">
+                        <h3>{{tampungNas.simbol}}</h3>
+                        <p>perusahaan : {{tampungNas.perusahaan}}</p>
+                    </div>
+                    {% endfor %}
+                    <br>
+                  </div>
+
+
+          <footer class="footer">
+              <div class="container">
+                  <span class="text-dark">Copyright 2022</span>
+              </div>
+          </footer>
+
+</body>
+</html>

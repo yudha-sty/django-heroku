@@ -1,0 +1,39 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Home</title>
+    </head>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'vendor/bootstrap.css' %}">
+<body>
+    <img id="banner" src="{% static 'img/home.jpg' %}" alt="">
+
+    <div id="menu">
+<ul>
+    <li><a href="/">Home</a></li>
+    <li><a href="/nasdaq/">Perusahaan NASDAQ</a></li>
+</ul>
+    </div>
+
+    <div class="container mb-3">
+        <div class="card">
+            <div class="card-header">
+              Featured
+            </div>
+            <div class="card-body">
+              <h5 class="card-title"><a href="/nasdaq/">List Perusahaan di Indeks NASDAQ</a></h5>
+              <p class="card-text">Index NASDAQ terdiri dari 3000 saham dan 100 perusahaan besar. sebagian besar adalah saham saham perusahaan berbasis teknologi</p>
+            </div>
+          </div>
+          </div>
+
+          <footer class="footer">
+              <div class="container">
+                  <span class="text-dark">Copyright 2022</span>
+              </div>
+          </footer>
+
+</body>
+</html>
