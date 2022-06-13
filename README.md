@@ -1,2 +1,2 @@
 # Repository Baru 
-UAS DJANGO
+UAS DJANGO .
